@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+</head>
+
+<body>
+
+    <!-- Autor: Arthur | Data: 29/09 -->
+
+    <h1>Protocolo HTTP</h1>
+
+    <p>
+        HTTP significa HyperText Transfer Protocol. É um protocolo utilizado
+        para realizar a comunicação entre o navegador e os servidores na Web.
+    </p>
+
+    <hr>
+
+    <h2>Como funciona o HTTP?</h2>
+
+    <p>
+        Quando acessamos um site, o navegador envia uma requisição, chamada
+        Request, para um servidor. O servidor recebe essa requisição, processa
+        as informações e envia uma resposta, chamada Response.
+    </p>
+
+    <p>
+        Navegador → Request → Servidor
+    </p>
+
+    <p>
+        Navegador ← Response ← Servidor
+    </p>
+
+    <img src="cliente-servidor.jpeg"
+         alt="Comunicação entre cliente e servidor"
+         width="500">
+
+    <hr>
+
+    <h2>Exemplo de uma requisição HTTP</h2>
+
+    <p>
+        GET /index.html HTTP/1.1
+    </p>
+
+    <p>
+        Host: exemplo.com
+    </p>
+
+    <p>
+        User-Agent: Chrome
+    </p>
+
+    <p>
+        Accept: text/html
+    </p>
+
+    <h3>Campos da requisição</h3>
+
+    <ul>
+        <li><strong>GET:</strong> método utilizado para solicitar um recurso.</li>
+        <li><strong>/index.html:</strong> recurso que está sendo solicitado.</li>
+        <li><strong>HTTP/1.1:</strong> versão do protocolo HTTP.</li>
+        <li><strong>Host:</strong> endereço do servidor que será acessado.</li>
+        <li><strong>User-Agent:</strong> identifica o navegador utilizado.</li>
+        <li><strong>Accept:</strong> informa o tipo de conteúdo que o navegador aceita.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Exemplo de uma resposta HTTP</h2>
+
+    <p>
+        HTTP/1.1 200 OK
+    </p>
+
+    
+
+    <p>
+        Content-Length: 1250
+    </p>
+
+    <h3>Campos da resposta</h3>
+
+    <ul>
+        <li><strong>HTTP/1.1:</strong> versão do protocolo utilizada.</li>
+        <li><strong>200 OK:</strong> indica que a requisição foi realizada com sucesso.</li>
+        <li><strong>Content-Type:</strong> informa o tipo de conteúdo enviado pelo servidor.</li>
+        <li><strong>Content-Length:</strong> informa o tamanho do conteúdo enviado.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Capturando uma requisição</h2>
+
+    <p>
+        Para capturar uma requisição HTTP no navegador, podemos utilizar
+        as ferramentas de desenvolvedor.
+    </p>
+
+    <ol>
+        <li>Abrir o navegador.</li>
+        <li>Pressionar F12.</li>
+        <li>Acessar a aba Network ou Rede.</li>
+        <li>Recarregar a página.</li>
+        <li>Clicar em uma das requisições.</li>
+        <li>Acessar a seção Headers.</li>
+    </ol>
+
+    <hr>
+
+    <h2>Request e Response capturados</h2>
+
+   
+
+    <p>
+        <strong>Request:</strong>
+    </p>
+
+    <img src="request.png"
+         alt="Request HTTP capturado no navegador"
+         width="700">
+
+    <p>
+        <strong>Response:</strong>
+    </p>
+
+    <img src="response.png"
+         alt="Response HTTP capturado no navegador"
+         width="700">
+
+</body>
+
+</html>''
